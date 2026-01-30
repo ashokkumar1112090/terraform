@@ -1,0 +1,99 @@
+{
+  "ami" = "ami-0220d79f3f480ecf5"
+  "arn" = "arn:aws:ec2:us-east-1:466531995545:instance/i-06932b285dc97480d"
+  "associate_public_ip_address" = true
+  "availability_zone" = "us-east-1c"
+  "credit_specification" = tolist([
+    {
+      "cpu_credits" = "unlimited"
+    },
+  ])
+  "disable_api_stop" = false
+  "disable_api_termination" = false
+  "ebs_block_device" = toset([])
+  "ebs_optimized" = false
+  "enclave_options" = tolist([
+    {
+      "enabled" = false
+    },
+  ])
+  "ephemeral_block_device" = tolist([])
+  "filter" = toset(null) /* of object */
+  "get_password_data" = false
+  "get_user_data" = false
+  "host_id" = ""
+  "host_resource_group_arn" = ""
+  "iam_instance_profile" = ""
+  "id" = "i-06932b285dc97480d"
+  "instance_id" = "i-06932b285dc97480d"
+  "instance_state" = "running"
+  "instance_tags" = tomap(null) /* of string */
+  "instance_type" = "t3.micro"
+  "ipv6_addresses" = toset([])
+  "key_name" = ""
+  "launch_time" = "2026-01-28T12:13:03Z"
+  "maintenance_options" = tolist([
+    {
+      "auto_recovery" = "default"
+    },
+  ])
+  "metadata_options" = tolist([
+    {
+      "http_endpoint" = "enabled"
+      "http_protocol_ipv6" = "disabled"
+      "http_put_response_hop_limit" = 1
+      "http_tokens" = "optional"
+      "instance_metadata_tags" = "disabled"
+    },
+  ])
+  "monitoring" = false
+  "network_interface_id" = "eni-02420fa70c8fe1cdd"
+  "outpost_arn" = ""
+  "password_data" = tostring(null)
+  "placement_group" = ""
+  "placement_group_id" = ""
+  "placement_partition_number" = 0
+  "private_dns" = "ip-172-31-16-203.ec2.internal"
+  "private_dns_name_options" = tolist([
+    {
+      "enable_resource_name_dns_a_record" = false
+      "enable_resource_name_dns_aaaa_record" = false
+      "hostname_type" = "ip-name"
+    },
+  ])
+  "private_ip" = "172.31.16.203"
+  "public_dns" = "ec2-54-160-251-166.compute-1.amazonaws.com"
+  "public_ip" = "54.160.251.166"
+  "region" = "us-east-1"
+  "root_block_device" = toset([
+    {
+      "delete_on_termination" = true
+      "device_name" = "/dev/sda1"
+      "encrypted" = false
+      "iops" = 3000
+      "kms_key_id" = ""
+      "tags" = tomap({})
+      "throughput" = 125
+      "volume_id" = "vol-09a415e9332bbffc3"
+      "volume_size" = 20
+      "volume_type" = "gp3"
+    },
+  ])
+  "secondary_private_ips" = toset([])
+  "security_groups" = toset([
+    "allow-all",
+  ])
+  "source_dest_check" = true
+  "subnet_id" = "subnet-04497a597c8ea65f1"
+  "tags" = tomap({
+    "Name" = "mongodb"
+    "Terraform" = "true"
+  })
+  "tenancy" = "default"
+  "timeouts" = null /* object */
+  "user_data" = tostring(null)
+  "user_data_base64" = tostring(null)
+  "vpc_security_group_ids" = toset([
+    "sg-088cedd49ade240c5",
+  ])
+}
